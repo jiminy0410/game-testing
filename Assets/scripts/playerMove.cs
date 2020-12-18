@@ -8,16 +8,20 @@ public class playerMove : MonoBehaviour
     public bool forward;
     public bool jump;
     public float jumphight;
-
+    public int live = 3;
+    public bool grounded;
 
     // Start is called before the first frame update
     void Start()
     {
-
+        dead();
     }
     // Update is called once per frame
     void Update()
     {
+        if (live < 1)
+        { dead(); }
+
         if (Input.GetKeyDown("a"))
         {
             if (PresentLane > 1)
@@ -68,10 +72,37 @@ public class playerMove : MonoBehaviour
         forward = false;
         GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, GetComponent<Rigidbody>().velocity.y, speed);
         // jump
-        if(jump)
+        if (jump && grounded)
         {
-            GetComponent<Rigidbody>().AddForce(0, jumphight, 0,ForceMode.Impulse);
+            GetComponent<Rigidbody>().AddForce(0, jumphight, 0, ForceMode.Impulse);
+            grounded = false;
         }
         jump = false;
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("meen"))
+        {
+            live--;
+        }
+    }
+
+    private void OnCollisionStay(Collision collision)
+    {
+        grounded = true;
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        grounded = false;
+    }
+
+    void dead()
+    {
+        live = 3;
+        transform.position = new Vector3(0, 0, 0);
+        speed = 5;
+        PresentLane = 2;
     }
 }
