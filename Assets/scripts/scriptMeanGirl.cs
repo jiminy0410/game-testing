@@ -33,7 +33,7 @@ public class scriptMeanGirl : MonoBehaviour
     }
     void Update()
     {
-        if (scr.live < 1)
+        if (scr.die)
         {
             dead();
         }

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class playerMove : MonoBehaviour
 {
@@ -10,8 +11,16 @@ public class playerMove : MonoBehaviour
     public float jumphight;
     public int live = 3;
     public bool grounded;
+    public float dist;
     public float score;
     public int coins;
+    public bool die;
+    public int deadTimer;
+
+    public GameObject LivesText;
+    public GameObject ScoreText;
+    public GameObject CoinsText;
+    public GameObject DistText;
 
     // Start is called before the first frame update
     void Start()
@@ -22,26 +31,28 @@ public class playerMove : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (live < 1)
-        { dead(); }
+        LivesText.GetComponent<Text>().text = "lives :" + live;
+        ScoreText.GetComponent<Text>().text = "score :" + score;
+        CoinsText.GetComponent<Text>().text = "coins :" + coins;
+        DistText.GetComponent<Text>().text = "didst :" + (int)dist;
 
         if (Input.GetKeyDown("a"))
         {
-            if (PresentLane > 1)
+            if (PresentLane > 1 && live > 0)
             {
                 PresentLane--;
             }
         }
         if (Input.GetKeyDown("d"))
         {
-            if (PresentLane < 3)
+            if (PresentLane < 3 && live > 0)
             {
                 PresentLane++;
             }
         }
         if (Input.GetKey("w"))
         {
-            if (speed < speedMax)
+            if (speed < speedMax && live > 0)
             {
                 forward = true;
             }
@@ -54,7 +65,26 @@ public class playerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        score++;
+        if (transform.position.z >790)
+        {
+            live--;
+        }
+        die = false;
+        if (live < 1)
+        {
+            deadTimer--;
+            if (deadTimer < 1)
+            {
+                die = true;
+            }
+            speed = 0;
+        }
+        if (die)
+        {
+            dead();
+        }
+
+        dist += speed / 10;
         // lane control 
         switch (PresentLane)
         {
@@ -69,19 +99,24 @@ public class playerMove : MonoBehaviour
                 break;
         }
         // speed
+        /*
         if (forward)
+        {
+        */
+        if (speed < speedMax && live > 0)
         {
             speed += 0.1f;
         }
         forward = false;
         GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, GetComponent<Rigidbody>().velocity.y, speed);
         // jump
-        if (jump && grounded)
+        if (jump && grounded && live > 0)
         {
             GetComponent<Rigidbody>().AddForce(0, jumphight, 0, ForceMode.Impulse);
             grounded = false;
         }
         jump = false;
+        score = (int)(coins * 50 + dist);
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -97,7 +132,7 @@ public class playerMove : MonoBehaviour
     {
         if (other.CompareTag("coin"))
         {
-            score += 50;
+            coins++;
         }
     }
 
@@ -119,5 +154,7 @@ public class playerMove : MonoBehaviour
         PresentLane = 2;
         score = 0;
         coins = 0;
+        dist = 0;
+        deadTimer = 180;
     }
 }
