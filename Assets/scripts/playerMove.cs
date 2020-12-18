@@ -10,11 +10,14 @@ public class playerMove : MonoBehaviour
     public float jumphight;
     public int live = 3;
     public bool grounded;
+    public float score;
+    public int coins;
 
     // Start is called before the first frame update
     void Start()
     {
         dead();
+        Physics.gravity = new Vector3(0, Physics.gravity.y * 2, 0);
     }
     // Update is called once per frame
     void Update()
@@ -51,6 +54,7 @@ public class playerMove : MonoBehaviour
 
     void FixedUpdate()
     {
+        score++;
         // lane control 
         switch (PresentLane)
         {
@@ -89,6 +93,14 @@ public class playerMove : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("coin"))
+        {
+            score += 50;
+        }
+    }
+
     private void OnCollisionStay(Collision collision)
     {
         grounded = true;
@@ -103,7 +115,9 @@ public class playerMove : MonoBehaviour
     {
         live = 3;
         transform.position = new Vector3(0, 0, 0);
-        speed = 5;
+        speed = 10;
         PresentLane = 2;
+        score = 0;
+        coins = 0;
     }
 }
