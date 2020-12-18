@@ -85,6 +85,7 @@ public class playerMove : MonoBehaviour
         if (collision.gameObject.CompareTag("meen"))
         {
             live--;
+            speed = speed / 2;
         }
     }
 
