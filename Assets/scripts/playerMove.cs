@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class playerMove : MonoBehaviour
 {
     public float speed;
-    public float speedMax = 20;
+    public float speedMax = 40;
     public int PresentLane = 2;
     public bool forward;
     public bool jump;
@@ -99,14 +99,15 @@ public class playerMove : MonoBehaviour
                 break;
         }
         // speed
-        /*
-        if (forward)
-        {
-        */
-        if (speed < speedMax && live > 0)
-        {
-            speed += 0.1f;
-        }
+
+        //if (forward)
+        //{
+
+            if (speed < speedMax && live > 0)
+            {
+                speed += 0.01f;
+            }
+        //}
         forward = false;
         GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, GetComponent<Rigidbody>().velocity.y, speed);
         // jump
