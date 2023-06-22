@@ -25,7 +25,7 @@ public class playerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        dead();
+        //dead();
         Physics.gravity = new Vector3(0, Physics.gravity.y * 2, 0);
     }
     // Update is called once per frame
@@ -50,9 +50,9 @@ public class playerMove : MonoBehaviour
                 PresentLane++;
             }
         }
-        if (Input.GetKey("w"))
+        if (Input.GetKeyDown("w"))
         {
-            if (speed < speedMax && live > 0)
+            if (live > 0)
             {
                 forward = true;
             }
@@ -65,7 +65,7 @@ public class playerMove : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (transform.position.z >790)
+        if (transform.position.z >195)
         {
             live--;
         }
@@ -100,15 +100,11 @@ public class playerMove : MonoBehaviour
         }
         // speed
 
-        //if (forward)
-        //{
-
-            if (speed < speedMax && live > 0)
+        if (speed < speedMax && live > 0)
             {
                 speed += 0.01f;
             }
-        //}
-        forward = false;
+
         GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, GetComponent<Rigidbody>().velocity.y, speed);
         // jump
         if (jump && grounded && live > 0)
@@ -157,5 +153,6 @@ public class playerMove : MonoBehaviour
         coins = 0;
         dist = 0;
         deadTimer = 180;
+        forward = false;
     }
 }
