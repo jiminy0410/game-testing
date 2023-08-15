@@ -16,8 +16,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 43
-    width: 1920
-    height: 1037
+    width: 2560
+    height: 1397
   m_ShowMode: 4
   m_Title: Project
   m_RootView: {fileID: 4}
@@ -40,9 +40,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 658
-    width: 419
-    height: 329
+    y: 898
+    width: 559
+    height: 449
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
@@ -67,14 +67,14 @@ MonoBehaviour:
   - {fileID: 2}
   m_Position:
     serializedVersion: 2
-    x: 1501
+    x: 2001
     y: 0
-    width: 419
-    height: 987
+    width: 559
+    height: 1347
   m_MinSize: {x: 276, y: 192}
-  m_MaxSize: {x: 4002, y: 8042}
+  m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 10437
+  controlID: 103
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -95,8 +95,8 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
-    height: 1037
+    width: 2560
+    height: 1397
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &5
@@ -116,7 +116,7 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1920
+    width: 2560
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -137,8 +137,8 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 1017
-    width: 1920
+    y: 1377
+    width: 2560
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
@@ -162,12 +162,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 30
-    width: 1920
-    height: 987
-  m_MinSize: {x: 609, y: 471}
-  m_MaxSize: {x: 18005, y: 14021}
+    width: 2560
+    height: 1347
+  m_MinSize: {x: 609, y: 492}
+  m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 9177
+  controlID: 159
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -187,12 +187,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 351
-    height: 987
-  m_MinSize: {x: 231, y: 471}
-  m_MaxSize: {x: 10001, y: 14021}
+    width: 468
+    height: 1347
+  m_MinSize: {x: 231, y: 492}
+  m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 9106
+  controlID: 160
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -210,10 +210,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 351
-    height: 560
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 468
+    height: 764
+  m_MinSize: {x: 201, y: 221}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -235,9 +235,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 560
-    width: 351
-    height: 427
+    y: 764
+    width: 468
+    height: 583
   m_MinSize: {x: 231, y: 271}
   m_MaxSize: {x: 10001, y: 10021}
   m_ActualView: {fileID: 18}
@@ -262,14 +262,14 @@ MonoBehaviour:
   - {fileID: 13}
   m_Position:
     serializedVersion: 2
-    x: 351
+    x: 468
     y: 0
-    width: 1150
-    height: 987
-  m_MinSize: {x: 102, y: 221}
-  m_MaxSize: {x: 4002, y: 8021}
+    width: 1533
+    height: 1347
+  m_MinSize: {x: 102, y: 242}
+  m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 9034
+  controlID: 65
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -287,10 +287,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 1150
-    height: 560
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+    width: 1533
+    height: 764
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 19}
@@ -315,9 +315,9 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-    y: 560
-    width: 1150
-    height: 427
+    y: 764
+    width: 1533
+    height: 583
   m_MinSize: {x: 100, y: 100}
   m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 23}
@@ -344,16 +344,16 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 419
-    height: 658
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+    width: 559
+    height: 898
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 25}
   m_Panes:
   - {fileID: 25}
   - {fileID: 26}
   m_Selected: 0
-  m_LastSelected: 0
+  m_LastSelected: 1
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -374,22 +374,22 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1501
-    y: 731
-    width: 418
-    height: 308
+    x: 2001
+    y: 971
+    width: 558
+    height: 428
   m_ViewDataDictionary: {fileID: 0}
   m_Spl:
-    ID: 10503
+    ID: 182
     splitterInitialOffset: 0
     currentActiveSplitter: -1
-    realSizes: b20000003c000000
+    realSizes: 0c0100005a000000
     relativeSizes:
     - 0.75
     - 0.25
     minSizes: 2000000020000000
     maxSizes: 0000000000000000
-    lastTotalSize: 238
+    lastTotalSize: 358
     splitSize: 6
     xOffset: 0
   m_TestTypeToolbarIndex: 0
@@ -400,9 +400,9 @@ MonoBehaviour:
       uniqueId: '[New Unity Project][suite]'
       name: New Unity Project
       fullName: New Unity Project
-      resultStatus: 2
-      duration: 0.1037472
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.1142937
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -416,9 +416,9 @@ MonoBehaviour:
       uniqueId: '[playmode.dll][suite]'
       name: playmode.dll
       fullName: C:/Users/jimin/Downloads/game testing/testinggama/Library/ScriptAssemblies/playmode.dll
-      resultStatus: 2
-      duration: 0.0583794
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0814595
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -432,9 +432,9 @@ MonoBehaviour:
       uniqueId: playmode.dll/[playmode][Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 2
-      duration: 0.0528688
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0754594
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -448,9 +448,9 @@ MonoBehaviour:
       uniqueId: playmode.dll/Tests/[playmode][suite]
       name: playmode
       fullName: Tests.playmode
-      resultStatus: 2
-      duration: 0.0489532
-      messages: One or more child tests had errors
+      resultStatus: 1
+      duration: 0.0722036
+      messages: 
       output: 
       stacktrace: 
       notRunnable: 0
@@ -460,31 +460,15 @@ MonoBehaviour:
       categories: []
       parentId: 1005
       parentUniqueId: playmode.dll/[playmode][Tests][suite]
-    - id: 1002
-      uniqueId: playmode.dll/Tests/playmode/[playmode][Tests.playmode.MoveLeft]
-      name: MoveLeft
-      fullName: Tests.playmode.MoveLeft
-      resultStatus: 2
-      duration: 0.0345487
-      messages: 'Unhandled log message: ''[Exception] NullReferenceException: Object
-        reference not set to an instance of an object''. Use UnityEngine.TestTools.LogAssert.Expect'
-      output: 'NullReferenceException: Object reference not set to an instance of
-        an object
-
-        MissingComponentException: There is no ''Rigidbody''
-        attached to the "New Game Object" game object, but a script is trying to
-        access it.
-
-        You probably need to add a Rigidbody to the game object
-        "New Game Object". Or your script needs to check if the component is attached
-        before using it.
-
-'
-      stacktrace: 'playerMove.Start () (at Assets/scripts/playerMove.cs:30)
-
-        
-
-'
+    - id: 1004
+      uniqueId: playmode.dll/Tests/playmode/[playmode][Tests.playmode.MoveJump]
+      name: MoveJump
+      fullName: Tests.playmode.MoveJump
+      resultStatus: 1
+      duration: 0.0284299
+      messages: 
+      output: 
+      stacktrace: 
       notRunnable: 0
       ignoredOrSkipped: 0
       description: 
@@ -493,40 +477,53 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: playmode.dll/Tests/[playmode][suite]
-    m_ResultText: 'MoveLeft (0,035s)
+    - id: 1002
+      uniqueId: playmode.dll/Tests/playmode/[playmode][Tests.playmode.MoveLeft]
+      name: MoveLeft
+      fullName: Tests.playmode.MoveLeft
+      resultStatus: 1
+      duration: 0.0151416
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: playmode.dll/Tests/[playmode][suite]
+    - id: 1003
+      uniqueId: playmode.dll/Tests/playmode/[playmode][Tests.playmode.MoveRight]
+      name: MoveRight
+      fullName: Tests.playmode.MoveRight
+      resultStatus: 1
+      duration: 0.0144429
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1001
+      parentUniqueId: playmode.dll/Tests/[playmode][suite]
+    m_ResultText: 
+    m_ResultStacktrace: 'UnityEngine.Rigidbody.get_velocity () (at <fbf411079f9349af9d7283cbbd3a7c7c>:0)
 
-      ---
-
-      Unhandled log message: ''[Exception]
-      NullReferenceException: Object reference not set to an instance of an object''.
-      Use UnityEngine.TestTools.LogAssert.Expect
-
-      ---
-
-      playerMove.Start
-      () (at Assets/scripts/playerMove.cs:30)
-
-      ---
-
-      NullReferenceException:
-      Object reference not set to an instance of an object
-
-      MissingComponentException:
-      There is no ''Rigidbody'' attached to the "New Game Object" game object, but
-      a script is trying to access it.
-
-      You probably need to add a Rigidbody
-      to the game object "New Game Object". Or your script needs to check if the
-      component is attached before using it.'
-    m_ResultStacktrace: 'playerMove.Start () (at Assets/scripts/playerMove.cs:30)
+      playerMove.FixedUpdate
+      () (at Assets/scripts/playerMove.cs:108)
 
       
 
 '
     m_TestListState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 43c95095
-      m_LastClickedID: -1789867709
+      m_SelectedIDs: 
+      m_LastClickedID: 0
       m_ExpandedIDs: 4dde2b085f8bc02ebcd9103328c00b42ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -626,10 +623,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 351
+    x: 468
     y: 73
-    width: 1148
-    height: 539
+    width: 1531
+    height: 743
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
@@ -639,7 +636,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-  m_TargetSize: {x: 1148, y: 518}
+  m_TargetSize: {x: 1531, y: 722}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -654,10 +651,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -574
-    m_HBaseRangeMax: 574
-    m_VBaseRangeMin: -259
-    m_VBaseRangeMax: 259
+    m_HBaseRangeMin: -765.5
+    m_HBaseRangeMax: 765.5
+    m_VBaseRangeMin: -361
+    m_VBaseRangeMax: 361
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -675,23 +672,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-      width: 1148
-      height: 518
+      width: 1531
+      height: 722
     m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 574, y: 259}
+    m_Translation: {x: 765.5, y: 361}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -574
-      y: -259
-      width: 1148
-      height: 518
+      x: -765.5
+      y: -361
+      width: 1531
+      height: 722
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 1148, y: 539}
+  m_LastWindowPixelSize: {x: 1531, y: 743}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 00000000000000000000
@@ -720,29 +717,29 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 73
-    width: 350
-    height: 539
+    width: 467
+    height: 743
   m_ViewDataDictionary: {fileID: 0}
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 88f00000
-      m_LastClickedID: 61576
-      m_ExpandedIDs: 5286ffff6e86fffff086ffff5a8affff768afffff88affff6291ffff7e91ffff0092ffffb094ffffcc94ffff4e95ffffc898ffffe498ffff6699ffff389cffff549cffffd69cffff54a0ffff70a0fffff4a0ffff10a2ffff24a2ffff38a2ffffd8a2ffff46a3ffff78a3ffff04a4ffff08a4ffff24a4ffffaea4ffffaea7ffffcaa7ffff62a8ffff66fbffff0a37000082370000f23700008a380000cc38000088db00008edb000098db0000b6db000014dc000094dc0000a6ec00004cef0000b0f00000
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: a266ffffbe66ffff5c67ffff246bffff406bffffde6bffffaa6effffc66effff646fffff9e71ffffba71ffff5872ffff6c75ffff8875ffff2676fffff078ffff0c79ffff9c79ffff947cffffb07cffff327dffffc87fffffe47fffff6680ffff5e83ffff7a83fffffc83ffff2e86ffff4a86ffffcc86ffff8a8cffffa68cffff288dffffea8fffff0690ffff8890ffff7c94ffff9894ffff1a95ffff1a98ffff3698ffffb898ffff229bffff3e9bffffc09bffff0a9effff269effffa89effff7aa1ffff96a1ffff18a2ffff6aa4ffff86a4ffff08a5ffff42a7ffff5ea7ffffe0a7ffff32aaffff4eaaffffd0aaffff32adffff4eadffffd0adffff22b0ffff3eb0ffffc0b0ffff1ab3ffff36b3ffffb8b3ffffeab5ffff06b6ffff88b6ffffd2b8ffffeeb8ffff70b9ffffd2bbffffeebbffff70bcffff72bfffff8ebfffff10c0ffff72c2ffff8ec2ffff10c3ffff72c5ffff8ec5ffff10c6ffffeac8ffff06c9ffff88c9ffffcacbffffe6cbffff68ccffff52cfffff6ecffffff0cfffff34dbffff50dbffffd2dbffffaadeffffc6deffff48dfffff9ee7ffffbae7ffff3ce8ffff8eebffffaaebffff2cecfffff8efffff14f0ffff96f0ffffe6f3ffff02f4ffff8cf4ffffacf7ffffc8f7ffff5cf8ffff66fbffff223e0000843f000004490000bc5700007a5c0000a25c00001c670000de6b0000406d00000272000064730000107f0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
+        m_Name: player
+        m_OriginalName: player
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 0
+        m_UserData: 33236
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 11
+        m_OriginalEventType: 0
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -774,9 +771,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-    y: 633
-    width: 350
-    height: 406
+    y: 837
+    width: 467
+    height: 562
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -802,7 +799,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 95}
     m_SelectedIDs: 6c620000
     m_LastClickedID: 25196
-    m_ExpandedIDs: ffffffff00000000e23a0000e43a000000ca9a3b
+    m_ExpandedIDs: 000000006e380000703800007238000074380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -830,21 +827,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000e43a00000a3b0000f6d2000004d3000000ca9a3b
+    m_ExpandedIDs: ffffffff000000006e380000703800007238000074380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: uiPunten
+      m_OriginalName: uiPunten
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: 12118
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 0
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -1119,10 +1116,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 351
-    y: 633
-    width: 1148
-    height: 406
+    x: 468
+    y: 837
+    width: 1531
+    height: 562
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
     m_NameFilter: 
@@ -1148,9 +1145,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: e43a0000
-    m_LastClickedID: 15076
-    m_ExpandedIDs: ffffffff00000000e23a0000e43a0000f6d2000000ca9a3b
+    m_SelectedIDs: 6e380000
+    m_LastClickedID: 14446
+    m_ExpandedIDs: 000000006e38000070380000723800007438000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1178,7 +1175,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000e23a0000e43a000000ca9a3b
+    m_ExpandedIDs: 000000006e380000703800007238000074380000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1205,7 +1202,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 06450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1255,10 +1252,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 351
-    y: 633
-    width: 1148
-    height: 406
+    x: 468
+    y: 837
+    width: 1531
+    height: 562
   m_ViewDataDictionary: {fileID: 0}
 --- !u!114 &24
 MonoBehaviour:
@@ -1288,7 +1285,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 61576
+  m_LastSelectedObjectID: 46850
 --- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1310,10 +1307,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 1501
+    x: 2001
     y: 73
-    width: 418
-    height: 637
+    width: 558
+    height: 877
   m_ViewDataDictionary: {fileID: 0}
   m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
@@ -1348,8 +1345,8 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 882
-    y: 72.66667
-    width: 397
-    height: 606
+    x: 2001
+    y: 73
+    width: 558
+    height: 877
   m_ViewDataDictionary: {fileID: 0}

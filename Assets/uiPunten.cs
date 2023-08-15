@@ -14,6 +14,7 @@ public class uiPunten : MonoBehaviour
     public GameObject ScoreText;
     public GameObject CoinsText;
     public GameObject DistText;
+    public GameObject Player;
 
     // Start is called before the first frame update
     void Start()
@@ -29,4 +30,13 @@ public class uiPunten : MonoBehaviour
         CoinsText.GetComponent<Text>().text = "coins :" + coins;
         DistText.GetComponent<Text>().text = "didst :" + (int)dist;
     }
+
+    void FixedUpdate()
+    {
+        dist = Player.GetComponent<playerMove>().dist;
+        coins = Player.GetComponent<playerMove>().coins;
+        live = Player.GetComponent<playerMove>().live;
+        score = Player.GetComponent<playerMove>().score;
+    }
 }
+

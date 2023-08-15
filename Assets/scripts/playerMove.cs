@@ -26,15 +26,18 @@ public class playerMove : MonoBehaviour
     void Start()
     {
         //dead();
+        LivesText = GameObject.Find("lives");
         Physics.gravity = new Vector3(0, Physics.gravity.y * 2, 0);
     }
     // Update is called once per frame
     void Update()
     {
-        LivesText.GetComponent<Text>().text = "lives :" + live;
+        /*
+        GameObject.Find("lives").GetComponent<Text>().text = "lives :" + live;
         ScoreText.GetComponent<Text>().text = "score :" + score;
         CoinsText.GetComponent<Text>().text = "coins :" + coins;
         DistText.GetComponent<Text>().text = "didst :" + (int)dist;
+        */
 
         if (Input.GetKeyDown("a"))
         {
@@ -85,6 +88,7 @@ public class playerMove : MonoBehaviour
         }
 
         dist += speed / 10;
+
         // lane control 
         switch (PresentLane)
         {
@@ -98,14 +102,19 @@ public class playerMove : MonoBehaviour
                 transform.position = new Vector3(1, transform.position.y, transform.position.z);
                 break;
         }
-        // speed
 
+        // speed
         if (speed < speedMax && live > 0)
             {
                 speed += 0.01f;
             }
 
-        GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, GetComponent<Rigidbody>().velocity.y, speed);
+        // forward
+        if (dist > 10)
+        {
+            GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, GetComponent<Rigidbody>().velocity.y, speed);
+        }
+
         // jump
         if (jump && grounded && live > 0)
         {
