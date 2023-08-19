@@ -28,6 +28,7 @@ public class playerMove : MonoBehaviour
         //dead();
         LivesText = GameObject.Find("lives");
         Physics.gravity = new Vector3(0, Physics.gravity.y * 2, 0);
+        deadTimer = 180;
     }
     // Update is called once per frame
     void Update()
@@ -72,7 +73,9 @@ public class playerMove : MonoBehaviour
         {
             live--;
         }
+
         die = false;
+
         if (live < 1)
         {
             deadTimer--;
@@ -82,6 +85,7 @@ public class playerMove : MonoBehaviour
             }
             speed = 0;
         }
+
         if (die)
         {
             dead();
@@ -106,19 +110,16 @@ public class playerMove : MonoBehaviour
         // speed
         if (speed < speedMax && live > 0)
             {
-                speed += 0.01f;
+                speed += 0.02f;
             }
 
         // forward
-        if (dist > 10)
-        {
-            GetComponent<Rigidbody>().velocity = new Vector3(GetComponent<Rigidbody>().velocity.x, GetComponent<Rigidbody>().velocity.y, speed);
-        }
+        GetComponent<Rigidbody>().velocity = new Vector3(this.GetComponent<Rigidbody>().velocity.x, this.GetComponent<Rigidbody>().velocity.y, speed);
 
         // jump
         if (jump && grounded && live > 0)
         {
-            GetComponent<Rigidbody>().AddForce(0, jumphight, 0, ForceMode.Impulse);
+            this.GetComponent<Rigidbody>().AddForce(0, jumphight, 0, ForceMode.Impulse);
             grounded = false;
         }
         jump = false;
@@ -152,11 +153,10 @@ public class playerMove : MonoBehaviour
         grounded = false;
     }
 
-    void dead()
+    public void dead()
     {
         live = 3;
         transform.position = new Vector3(0, 0, 0);
-        speed = 10;
         PresentLane = 2;
         score = 0;
         coins = 0;
