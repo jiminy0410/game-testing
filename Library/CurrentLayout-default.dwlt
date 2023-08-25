@@ -71,10 +71,10 @@ MonoBehaviour:
     y: 0
     width: 559
     height: 1347
-  m_MinSize: {x: 275, y: 171}
-  m_MaxSize: {x: 4001, y: 8021}
+  m_MinSize: {x: 276, y: 192}
+  m_MaxSize: {x: 4001, y: 8042}
   vertical: 1
-  controlID: 135
+  controlID: 17
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -164,10 +164,10 @@ MonoBehaviour:
     y: 30
     width: 2560
     height: 1347
-  m_MinSize: {x: 608, y: 471}
+  m_MinSize: {x: 609, y: 471}
   m_MaxSize: {x: 18004, y: 14021}
   vertical: 0
-  controlID: 134
+  controlID: 16
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -266,10 +266,10 @@ MonoBehaviour:
     y: 0
     width: 1533
     height: 1347
-  m_MinSize: {x: 102, y: 221}
-  m_MaxSize: {x: 4002, y: 8021}
+  m_MinSize: {x: 102, y: 242}
+  m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 113
+  controlID: 81
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -400,9 +400,9 @@ MonoBehaviour:
       uniqueId: '[New Unity Project][suite]'
       name: New Unity Project
       fullName: New Unity Project
-      resultStatus: 1
-      duration: 14.869816
-      messages: 
+      resultStatus: 0
+      duration: 14.867494
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -416,9 +416,9 @@ MonoBehaviour:
       uniqueId: '[playmode.dll][suite]'
       name: playmode.dll
       fullName: C:/Users/jimin/Downloads/game testing/testinggama/Library/ScriptAssemblies/playmode.dll
-      resultStatus: 1
-      duration: 14.825339
-      messages: 
+      resultStatus: 0
+      duration: 14.83347
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -432,9 +432,9 @@ MonoBehaviour:
       uniqueId: playmode.dll/[playmode][Tests][suite]
       name: Tests
       fullName: Tests
-      resultStatus: 1
-      duration: 14.815578
-      messages: 
+      resultStatus: 0
+      duration: 14.8286495
+      messages: One or more child tests had errors
       output: 
       stacktrace: 
       notRunnable: 0
@@ -449,7 +449,7 @@ MonoBehaviour:
       name: AStart
       fullName: Tests.AStart
       resultStatus: 1
-      duration: 0.1173411
+      duration: 0.1137218
       messages: 
       output: 
       stacktrace: 
@@ -465,7 +465,7 @@ MonoBehaviour:
       name: SampleScene
       fullName: Tests.AStart.SampleScene
       resultStatus: 1
-      duration: 0.1021493
+      duration: 0.1002329
       messages: 
       output: 
       stacktrace: 
@@ -482,7 +482,7 @@ MonoBehaviour:
       name: CollCheck
       fullName: Tests.CollCheck
       resultStatus: 1
-      duration: 2.094235
+      duration: 2.0845704
       messages: 
       output: 
       stacktrace: 
@@ -498,7 +498,7 @@ MonoBehaviour:
       name: Coin
       fullName: Tests.CollCheck.Coin
       resultStatus: 1
-      duration: 1.024548
+      duration: 1.0216297
       messages: 
       output: 'coin (UnityEngine.CapsuleCollider)
 
@@ -517,7 +517,7 @@ MonoBehaviour:
       name: Enemy
       fullName: Tests.CollCheck.Enemy
       resultStatus: 1
-      duration: 1.0119689
+      duration: 1.0112532
       messages: 
       output: 'obsticle (UnityEngine.GameObject)
 
@@ -531,12 +531,29 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1008
       parentUniqueId: playmode.dll/Tests/[playmode][Tests.CollCheck][suite]
+    - id: 1010
+      uniqueId: playmode.dll/Tests/CollCheck/[playmode][Tests.CollCheck.EnemySpeed]
+      name: EnemySpeed
+      fullName: Tests.CollCheck.EnemySpeed
+      resultStatus: 1
+      duration: 0.0123821
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+      categories:
+      - Uncategorized
+      parentId: 1008
+      parentUniqueId: playmode.dll/Tests/[playmode][Tests.CollCheck][suite]
     - id: 1008
       uniqueId: playmode.dll/Tests/[playmode][Tests.FullRunner][suite]
       name: FullRunner
       fullName: Tests.FullRunner
-      resultStatus: 1
-      duration: 12.453491
+      resultStatus: 0
+      duration: 12.454586
       messages: 
       output: 
       stacktrace: 
@@ -551,9 +568,9 @@ MonoBehaviour:
       uniqueId: playmode.dll/Tests/FullRunner/[playmode][Tests.FullRunner.RunMap]
       name: RunMap
       fullName: Tests.FullRunner.RunMap
-      resultStatus: 1
-      duration: 12.447599
-      messages: 
+      resultStatus: 2
+      duration: 0
+      messages: Cancelled by user
       output: 
       stacktrace: 
       notRunnable: 0
@@ -568,8 +585,8 @@ MonoBehaviour:
       uniqueId: playmode.dll/Tests/[playmode][Tests.Playmode][suite]
       name: Playmode
       fullName: Tests.Playmode
-      resultStatus: 1
-      duration: 0.1449861
+      resultStatus: 0
+      duration: 0.1458896
       messages: 
       output: 
       stacktrace: 
@@ -584,8 +601,8 @@ MonoBehaviour:
       uniqueId: playmode.dll/Tests/Playmode/[playmode][Tests.Playmode.Dead]
       name: Dead
       fullName: Tests.Playmode.Dead
-      resultStatus: 1
-      duration: 0.0084049
+      resultStatus: 0
+      duration: 0.0083361
       messages: 
       output: 
       stacktrace: 
@@ -601,8 +618,8 @@ MonoBehaviour:
       uniqueId: playmode.dll/Tests/Playmode/[playmode][Tests.Playmode.MoveJump]
       name: MoveJump
       fullName: Tests.Playmode.MoveJump
-      resultStatus: 1
-      duration: 0.1099044
+      resultStatus: 0
+      duration: 0.1113498
       messages: 
       output: 
       stacktrace: 
@@ -618,8 +635,8 @@ MonoBehaviour:
       uniqueId: playmode.dll/Tests/Playmode/[playmode][Tests.Playmode.MoveLeft]
       name: MoveLeft
       fullName: Tests.Playmode.MoveLeft
-      resultStatus: 1
-      duration: 0.0103865
+      resultStatus: 0
+      duration: 0.0095579
       messages: 
       output: 
       stacktrace: 
@@ -635,8 +652,8 @@ MonoBehaviour:
       uniqueId: playmode.dll/Tests/Playmode/[playmode][Tests.Playmode.MoveRight]
       name: MoveRight
       fullName: Tests.Playmode.MoveRight
-      resultStatus: 1
-      duration: 0.0096711
+      resultStatus: 0
+      duration: 0.0099707
       messages: 
       output: 
       stacktrace: 
@@ -648,17 +665,13 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: playmode.dll/Tests/[playmode][Tests.Playmode][suite]
-    m_ResultText: 'Enemy (1,012s)
-
-      ---
-
-      obsticle (UnityEngine.GameObject)'
+    m_ResultText: EnemySpeed (0,012s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 8f111611
-      m_LastClickedID: 286658959
-      m_ExpandedIDs: 92d409d34dde2b085f8bc02ebcd9103328c00b42ffffff7f
+      scrollPos: {x: 0, y: 72}
+      m_SelectedIDs: eafb082e
+      m_LastClickedID: 772340714
+      m_ExpandedIDs: 167495a063cd6ec6fb34c5cd92d409d35d74bdda4dde2b085f8bc02ebcd9103328c00b42ffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -693,7 +706,7 @@ MonoBehaviour:
       name: New Unity Project
       fullName: New Unity Project
       resultStatus: 1
-      duration: 0.0739258
+      duration: 0.0662441
       messages: 
       output: 
       stacktrace: 
@@ -709,7 +722,7 @@ MonoBehaviour:
       name: Tests2.dll
       fullName: C:/Users/jimin/Downloads/game testing/testinggama/Library/ScriptAssemblies/Tests2.dll
       resultStatus: 1
-      duration: 0.026035
+      duration: 0.0324577
       messages: 
       output: 
       stacktrace: 
@@ -725,7 +738,7 @@ MonoBehaviour:
       name: Tests
       fullName: Tests
       resultStatus: 1
-      duration: 0.023825
+      duration: 0.0319612
       messages: 
       output: 
       stacktrace: 
@@ -741,7 +754,7 @@ MonoBehaviour:
       name: editMode
       fullName: Tests.editMode
       resultStatus: 1
-      duration: 0.0232887
+      duration: 0.0239678
       messages: 
       output: 
       stacktrace: 
@@ -757,7 +770,7 @@ MonoBehaviour:
       name: Dead
       fullName: Tests.editMode.Dead
       resultStatus: 1
-      duration: 0.0024997
+      duration: 0.004067
       messages: 
       output: 
       stacktrace: 
@@ -774,7 +787,7 @@ MonoBehaviour:
       name: MoveJump
       fullName: Tests.editMode.MoveJump
       resultStatus: 1
-      duration: 0.0002935
+      duration: 0.0002929
       messages: 
       output: 
       stacktrace: 
@@ -791,7 +804,7 @@ MonoBehaviour:
       name: MoveLeft
       fullName: Tests.editMode.MoveLeft
       resultStatus: 1
-      duration: 0.000255
+      duration: 0.0002522
       messages: 
       output: 
       stacktrace: 
@@ -808,7 +821,7 @@ MonoBehaviour:
       name: MoveRight
       fullName: Tests.editMode.MoveRight
       resultStatus: 1
-      duration: 0.0002538
+      duration: 0.0002452
       messages: 
       output: 
       stacktrace: 
@@ -820,7 +833,7 @@ MonoBehaviour:
       - Uncategorized
       parentId: 1001
       parentUniqueId: Tests2.dll/Tests/[Tests2][Tests.editMode][suite]
-    m_ResultText: Dead (0,002s)
+    m_ResultText: Dead (0,004s)
     m_ResultStacktrace: 
     m_TestListState:
       scrollPos: {x: 0, y: 0}
@@ -975,7 +988,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 1290feff2e90feff0a93feff9695feffb295feff6e98feff2e9bfeff4a9bfeff269efeff84a0feffa0a0feff5ca3feff94a5feffb0a5feff6ca8feffacaafeffc8aafeff5cadfeffd6adfeff2eb0feff4ab0feff06b3feff9ab5feffb6b5feff72b8fefff6bafeff12bbfeffc6bdfeff14c2feff30c2feffe4c4feffd2c7feffeec7feffa2cafefff2cdfeff0ecefeffdad0feffd2d3feffeed3feffb2d4feff46d7feff62d7feff4edafeff9edcfeffbadcfeff86dffeff80e2feff9ce2feff68e5feff20e8feff3ce8feff08ebfeff48edfeff64edfeff30f0feffc4f2feffe0f2feff94f5feffc4f7feffe0f7feffb4fafeffbcfdfeffd8fdfeff8c00ffff7203ffff8e03ffff4206ffffde08fffffa08ffffce0bffff620effff7e0effff3211ffffbe13ffffda13ffff8e16ffff2a19ffff4619fffffc1bffff501effff6c1effff4021ffffcc23ffffe823ffff9c26ffffbe29ffffda29ffffae2cffff4a2fffff662fffff1232ffff5e35ffffa037ffffbc37ffff903affff763dffff923dffff6640ffff5443ffff7043ffff4446fffff248ffff0e49ffffe24bffff6e4effff8a4effff5e51ffffe253fffffe53ffffd256ffff765affff925affff365bffff8e5effffaa5effffde67ffff166affff326affff066fffffd871ffffb274ffff5677ffff7277ffff467cffff007fffff1c7ffffff083ffff8887ffffa487ffff3e8affffa28cffffbe8cffff5a9affff5e9dffff7a9dffff0eabffffaaadffffc6adffff9ab2ffff02b5ffff1eb5ffff52b7fffffeb9ffff78bcffff94bcffff68c1ffffa0c3ffffbcc3ffff90c8ffffe0cafffffccaffff90d8ffff50dbffff6cdbffff40e0ffffece2ffff08e3ffff9cf0ffff8ef3ffffaaf3ffff88f8ffff66fbffffa4d000000ae700006ce80000ece80000
+      m_ExpandedIDs: b0d6ffffccd6ffff90d9ffff3cdcffff58dcffffaedeffff28dfffff14e2ffff30e2ffff14e5ffffa8e7ffffc4e7ffff88eaffff4eedffff6aedffff46f0ffffbcf2fffff4f4ffff10f5ffffcaf7ffff66fbffff5e430000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1535,7 +1548,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 61682
+  m_LastSelectedObjectID: 14042
 --- !u!114 &25
 MonoBehaviour:
   m_ObjectHideFlags: 52

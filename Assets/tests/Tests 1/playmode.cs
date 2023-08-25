@@ -101,8 +101,18 @@ namespace Tests
 
             yield return new WaitForSeconds(1f);
 
-            Debug.Log(minion.hitObject);
             Assert.AreEqual(true, minion.hitObject.CompareTag("meen"));
+        }
+
+        [UnityTest]
+        public IEnumerator EnemySpeed()
+        {
+            var gameObject = GameObject.Find("player");
+            var minion = gameObject.GetComponent<playerMove>();
+
+            yield return null;
+
+            Assert.Less(minion.speed,10);
         }
 
         [UnityTest]
@@ -116,7 +126,6 @@ namespace Tests
 
             yield return new WaitForSeconds(1f);
 
-            Debug.Log(minion.coin);
             Assert.AreEqual(true, minion.coin.CompareTag("coin"));
         }
     }
