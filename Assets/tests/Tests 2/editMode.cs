@@ -53,6 +53,9 @@ namespace Tests
             Assert.AreEqual(0, minion.score);
             Assert.AreEqual(0, minion.coins);
             Assert.AreEqual(0, minion.dist);
+            Assert.AreEqual(10, minion.speed);
+            Assert.AreEqual(null, minion.hitObject);
+            Assert.AreEqual(null, minion.coin);
             Assert.AreEqual(180, minion.deadTimer);
             Assert.AreEqual(false, minion.forward);
         }

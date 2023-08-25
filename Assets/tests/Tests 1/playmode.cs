@@ -7,14 +7,27 @@ using UnityEngine.SceneManagement;
 
 namespace Tests
 {
+    public class AStart
+    {
+        [UnityTest]
+        public IEnumerator SampleScene()
+        {
+            SceneManager.LoadScene("SampleScene");
+
+            yield return null;
+
+            Assert.AreEqual("SampleScene", SceneManager.GetActiveScene().name);
+        }
+    }
+
     public class Playmode
     {
         [UnityTest]
         public IEnumerator MoveLeft()
         {
-            SceneManager.LoadScene("SampleScene");
             var gameObject = GameObject.Find("player");
             var minion = gameObject.GetComponent<playerMove>();
+            minion.dead();
 
             minion.PresentLane--;
 
@@ -26,9 +39,10 @@ namespace Tests
         [UnityTest]
         public IEnumerator MoveRight()
         {
-            SceneManager.LoadScene("SampleScene");
+
             var gameObject = GameObject.Find("player");
             var minion = gameObject.GetComponent<playerMove>();
+            minion.dead();
 
             minion.PresentLane++;
 
@@ -40,13 +54,14 @@ namespace Tests
         [UnityTest]
         public IEnumerator MoveJump()
         {
-            SceneManager.LoadScene("SampleScene");
+
             var gameObject = GameObject.Find("player");
             var minion = gameObject.GetComponent<playerMove>();
+            minion.dead();
 
             minion.jump = true;
 
-            yield return null;
+            yield return new WaitForSeconds(0.1f);
 
             Assert.AreEqual(false, minion.grounded);
         }
@@ -54,20 +69,23 @@ namespace Tests
         [UnityTest]
         public IEnumerator Dead()
         {
-            SceneManager.LoadScene("SampleScene");
+
             var gameObject = GameObject.Find("player");
             var minion = gameObject.GetComponent<playerMove>();
 
             minion.dead();
 
-            Assert.AreEqual(3,minion.live);
+            Assert.AreEqual(3, minion.live);
             Assert.AreEqual(new Vector3(0, 0, 0), minion.transform.position);
-            Assert.AreEqual(2,minion.PresentLane);
-            Assert.AreEqual(0,minion.score);
-            Assert.AreEqual(0,minion.coins);
-            Assert.AreEqual(0,minion.dist);
-            Assert.AreEqual(180,minion.deadTimer);
-            Assert.AreEqual(false,minion.forward);
+            Assert.AreEqual(2, minion.PresentLane);
+            Assert.AreEqual(0, minion.score);
+            Assert.AreEqual(0, minion.coins);
+            Assert.AreEqual(0, minion.dist);
+            Assert.AreEqual(10, minion.speed);
+            Assert.AreEqual(null, minion.hitObject);
+            Assert.AreEqual(null, minion.coin);
+            Assert.AreEqual(180, minion.deadTimer);
+            Assert.AreEqual(false, minion.forward);
 
             yield return null;
         }
@@ -75,17 +93,31 @@ namespace Tests
     public class CollCheck
     {
         [UnityTest]
-        public IEnumerator MoveJump()
+        public IEnumerator Enemy()
         {
-            SceneManager.LoadScene("SampleScene");
             var gameObject = GameObject.Find("player");
             var minion = gameObject.GetComponent<playerMove>();
+            minion.dead();
 
-            minion.jump = true;
+            yield return new WaitForSeconds(1f);
 
-            yield return null;
+            Debug.Log(minion.hitObject);
+            Assert.AreEqual(true, minion.hitObject.CompareTag("meen"));
+        }
 
-            Assert.AreEqual(false, minion.grounded);
+        [UnityTest]
+        public IEnumerator Coin()
+        {
+            var gameObject = GameObject.Find("player");
+            var minion = gameObject.GetComponent<playerMove>();
+            minion.dead();
+
+            minion.PresentLane++;
+
+            yield return new WaitForSeconds(1f);
+
+            Debug.Log(minion.coin);
+            Assert.AreEqual(true, minion.coin.CompareTag("coin"));
         }
     }
     public class FullRunner
@@ -93,15 +125,12 @@ namespace Tests
         [UnityTest]
         public IEnumerator RunMap()
         {
-            SceneManager.LoadScene("SampleScene");
-
             yield return null;
 
             var gameObject = GameObject.Find("player");
             var minion = gameObject.GetComponent<playerMove>();
-            var body = gameObject.GetComponent<Rigidbody>();
-
-            Debug.Log(body);
+            minion.dead();
+            minion.die = true;
 
             yield return new WaitForSeconds(0.7f);
 
@@ -123,7 +152,11 @@ namespace Tests
 
             minion.PresentLane--;
 
-            yield return new WaitForSeconds(2.3f);
+            yield return new WaitForSeconds(0.7f);
+
+            minion.jump = true;
+
+            yield return new WaitForSeconds(1.6f);
 
             minion.PresentLane++;
 

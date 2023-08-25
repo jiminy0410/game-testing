@@ -22,6 +22,9 @@ public class playerMove : MonoBehaviour
     public GameObject CoinsText;
     public GameObject DistText;
 
+    public GameObject hitObject;
+    public Collider coin;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -130,6 +133,7 @@ public class playerMove : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("meen"))
         {
+            hitObject = collision.gameObject;
             live--;
             speed = speed / 2;
         }
@@ -139,6 +143,7 @@ public class playerMove : MonoBehaviour
     {
         if (other.CompareTag("coin"))
         {
+            coin = other;
             coins++;
         }
     }
@@ -161,6 +166,9 @@ public class playerMove : MonoBehaviour
         score = 0;
         coins = 0;
         dist = 0;
+        hitObject = null;
+        coin = null;
+        speed = 10;
         deadTimer = 180;
         forward = false;
     }
